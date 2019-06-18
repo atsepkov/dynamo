@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+const chokidar = require('chokidar');
+
+// test main level directory structure
+function testStructure() {}
+
+// Watch current directory, ignore .dotfiles
+chokidar.watch('.', {
+    ignored: /(^|[\/\\])\../
+}).on('all', (event, path) => {
+    console.log(event, path);
+});
