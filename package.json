@@ -16,7 +16,8 @@
     "chokidar": "^3.0.1",
     "esm": "^3.2.25",
     "fs-extra": "^8.0.1",
-    "node": "^12.4.0"
+    "node": "^12.4.0",
+    "recursive-readdir": "^2.2.2"
   },
   "devDependencies": {
     "jest": "^24.8.0",
